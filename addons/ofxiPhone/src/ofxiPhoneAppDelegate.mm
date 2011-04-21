@@ -68,6 +68,21 @@
 
 
 -(void) applicationDidFinishLaunching:(UIApplication *)application {    
+	int w = 320, h = 480;
+	
+	float ver = [[[UIDevice currentDevice] systemVersion] floatValue];
+	// Can't detect screen res in pre 3.2 devices, but they are all 320x480 anyway.
+	if (ver >= 3.2) {
+		UIScreen* mainscr = [UIScreen mainScreen];
+		w = mainscr.currentMode.size.width;
+		h = mainscr.currentMode.size.height;
+	}
+	
+	if (w == 640){
+		iPhoneGetOFWindow()->enableRetinaSupport();
+		NSLog(@"Retina Detected.");
+	}
+	
 	static ofEventArgs voidEventArgs;
 	ofLog(OF_LOG_VERBOSE, "applicationDidFinishLaunching() start");
 	

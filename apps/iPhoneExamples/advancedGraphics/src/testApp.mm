@@ -196,6 +196,11 @@ void testApp::touchDown(ofTouchEventArgs &touch){
 }
 
 //--------------------------------------------------------------
+void testApp::touchCancelled(ofTouchEventArgs &touch){
+	
+}
+
+//--------------------------------------------------------------
 void testApp::touchMoved(ofTouchEventArgs &touch){
 	
 	if( touch.id ==  0){

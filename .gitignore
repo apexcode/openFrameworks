@@ -67,3 +67,5 @@ apps/*/*/test link
 apps/*/*/obj
 apps/*/*/bin
 .csettings
+
+/apps/devApps/iphoneRetinaTester/build

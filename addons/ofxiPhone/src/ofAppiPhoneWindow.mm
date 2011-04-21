@@ -120,18 +120,17 @@ ofPoint	ofAppiPhoneWindow::getWindowPosition() {
 	return windowPos;
 }
 
-
 // return cached size, read if nessecary
 ofPoint	ofAppiPhoneWindow::getWindowSize() {
 	if(windowSize.x == NOT_INITIALIZED) {
 		CGSize s = [[[UIApplication sharedApplication] keyWindow] bounds].size;
 		windowSize.set(s.width, s.height, 0);
-
+		
 		if(retinaEnabled)
 			if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)])
 				windowSize*=[[UIScreen mainScreen] scale];
 	}
-
+	
 	return windowSize;
 }
 
@@ -147,16 +146,16 @@ ofPoint	ofAppiPhoneWindow::getScreenSize() {
 
 int ofAppiPhoneWindow::getWidth(){
 	if( orientation == OFXIPHONE_ORIENTATION_PORTRAIT || orientation == OFXIPHONE_ORIENTATION_UPSIDEDOWN ){
-		return (int)getScreenSize().x;
+		return (int)getWindowSize().x;
 	}
-	return (int)getScreenSize().y;
+	return (int)getWindowSize().y;
 }
 
 int ofAppiPhoneWindow::getHeight(){
 	if( orientation == OFXIPHONE_ORIENTATION_PORTRAIT || orientation == OFXIPHONE_ORIENTATION_UPSIDEDOWN ){
-		return (int)getScreenSize().y;
+		return (int)getWindowSize().y;
 	}
-	return (int)getScreenSize().x;
+	return (int)getWindowSize().x;
 }
 
 int	ofAppiPhoneWindow::getWindowMode() {
@@ -308,10 +307,24 @@ void ofAppiPhoneWindow::timerLoop() {
 	[ofxiPhoneGetAppDelegate() lockGL];
 
 	[ofxiPhoneGetGLView() startRender];
+	
+	int ofwidth = ofGetWidth();
+	int ofheight = ofGetHeight();
+	
+	if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+		ofwidth *= [[UIScreen mainScreen] scale];
+		ofheight *= [[UIScreen mainScreen] scale];
+	}
+	
+	// this could be taken out and included in ofAppBaseWIndow
+	if(orientation == OFXIPHONE_ORIENTATION_PORTRAIT || orientation == OFXIPHONE_ORIENTATION_UPSIDEDOWN)
+		glViewport( 0, 0, ofwidth, ofheight );
+	else
+		glViewport( 0, 0, ofheight, ofwidth );
 
 	//we do this as ofGetWidth() now accounts for rotation 
 	//so we just make our viewport across the whole screen
-	glViewport( 0, 0, getScreenSize().x, getScreenSize().y );
+	//glViewport( 0, 0, getScreenSize().x, getScreenSize().y );
 
 	float * bgPtr = ofBgColorPtr();
 	bool bClearAuto = ofbClearBg();

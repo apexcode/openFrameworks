@@ -3,6 +3,7 @@
 #include "ofMain.h"
 #include "ofxiPhone.h"
 #include "ofxiPhoneExtras.h"
+#include "ofiPhoneVideoPlayer.h"
 
 class testApp : public ofxiPhoneApp {
 	
@@ -16,11 +17,14 @@ public:
 	void touchMoved(ofTouchEventArgs &touch);
 	void touchUp(ofTouchEventArgs &touch);
 	void touchDoubleTap(ofTouchEventArgs &touch);
+	void touchCancelled(ofTouchEventArgs &touch);
 
 	void lostFocus();
 	void gotFocus();
 	void gotMemoryWarning();
 	void deviceOrientationChanged(int newOrientation);
+	
+	ofiPhoneVideoPlayer test;
 
 };
 

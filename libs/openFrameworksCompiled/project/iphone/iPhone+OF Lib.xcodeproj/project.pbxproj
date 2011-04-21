@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		287ADCF11360F10B007FF17E /* ofxiPhoneImage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 287ADCEF1360F10B007FF17E /* ofxiPhoneImage.mm */; };
+		287ADCF21360F10B007FF17E /* ofxiPhoneImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 287ADCF01360F10B007FF17E /* ofxiPhoneImage.h */; };
+		2887CBDE1360E508000CD95A /* AVFoundationVideoGrabber.h in Headers */ = {isa = PBXBuildFile; fileRef = 2887CBDA1360E508000CD95A /* AVFoundationVideoGrabber.h */; };
+		2887CBDF1360E508000CD95A /* AVFoundationVideoGrabber.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2887CBDB1360E508000CD95A /* AVFoundationVideoGrabber.mm */; };
+		2887CBE01360E508000CD95A /* AVFoundationVideoPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2887CBDC1360E508000CD95A /* AVFoundationVideoPlayer.h */; };
+		2887CBE11360E508000CD95A /* AVFoundationVideoPlayer.mm in Sources */ = {isa = PBXBuildFile; fileRef = 2887CBDD1360E508000CD95A /* AVFoundationVideoPlayer.mm */; };
 		53DA338A12DF8F4500C622CE /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA338912DF8F4500C622CE /* AVFoundation.framework */; };
 		53DA338E12DF8F5000C622CE /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA338D12DF8F5000C622CE /* CoreAudio.framework */; };
 		53DA339012DF8F5000C622CE /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53DA338F12DF8F5000C622CE /* CoreMedia.framework */; };
@@ -222,7 +228,13 @@
 /* Begin PBXFileReference section */
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		287ADCEF1360F10B007FF17E /* ofxiPhoneImage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ofxiPhoneImage.mm; sourceTree = "<group>"; };
+		287ADCF01360F10B007FF17E /* ofxiPhoneImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxiPhoneImage.h; sourceTree = "<group>"; };
 		288765FC0DF74451002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2887CBDA1360E508000CD95A /* AVFoundationVideoGrabber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationVideoGrabber.h; sourceTree = "<group>"; };
+		2887CBDB1360E508000CD95A /* AVFoundationVideoGrabber.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVFoundationVideoGrabber.mm; sourceTree = "<group>"; };
+		2887CBDC1360E508000CD95A /* AVFoundationVideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVFoundationVideoPlayer.h; sourceTree = "<group>"; };
+		2887CBDD1360E508000CD95A /* AVFoundationVideoPlayer.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AVFoundationVideoPlayer.mm; sourceTree = "<group>"; };
 		5326AEA710A23A0500278DE6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		53DA338912DF8F4500C622CE /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		53DA338D12DF8F5000C622CE /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
@@ -232,7 +244,7 @@
 		5E2E99DC10ED147800587639 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		BB16EBD10F2B2A9500518274 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
 		BB16EBD80F2B2AB500518274 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphonesimulator_Release.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libofxiPhone_iphonesimulator_Release.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphoneos_Debug.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libofxiPhone_iphoneos_Debug.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB24DF7A10DA7C1B00E9C588 /* FreeImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FreeImage.h; sourceTree = "<group>"; };
 		BB24DF8D10DA7C1B00E9C588 /* ftconfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ftconfig.h; sourceTree = "<group>"; };
 		BB24DF8E10DA7C1B00E9C588 /* ftheader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ftheader.h; sourceTree = "<group>"; };
@@ -468,7 +480,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphonesimulator_Release.a */,
+				BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphoneos_Debug.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -689,6 +701,10 @@
 		BB24E02810DA7C6100E9C588 /* src */ = {
 			isa = PBXGroup;
 			children = (
+				2887CBDA1360E508000CD95A /* AVFoundationVideoGrabber.h */,
+				2887CBDB1360E508000CD95A /* AVFoundationVideoGrabber.mm */,
+				2887CBDC1360E508000CD95A /* AVFoundationVideoPlayer.h */,
+				2887CBDD1360E508000CD95A /* AVFoundationVideoPlayer.mm */,
 				BB24E02910DA7C6100E9C588 /* EAGLView.h */,
 				BB24E02A10DA7C6100E9C588 /* EAGLView.mm */,
 				BB3140C511BB098A0019348E /* ESRenderer.h */,
@@ -722,6 +738,8 @@
 				BB24E04010DA7C6100E9C588 /* ofxiPhoneMapKitDelegate.mm */,
 				BB24E04110DA7C6100E9C588 /* ofxiPhoneMapKitListener.h */,
 				BB24E04310DA7C6100E9C588 /* ofxiPhoneSoundStream.mm */,
+				287ADCF01360F10B007FF17E /* ofxiPhoneImage.h */,
+				287ADCEF1360F10B007FF17E /* ofxiPhoneImage.mm */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -1101,6 +1119,9 @@
 				E485F7931360A90000E939D3 /* ofVideoGrabber.h in Headers */,
 				E485F7951360A90000E939D3 /* ofVideoPlayer.h in Headers */,
 				E485F7961360A90000E939D3 /* ofMain.h in Headers */,
+				2887CBDE1360E508000CD95A /* AVFoundationVideoGrabber.h in Headers */,
+				2887CBE01360E508000CD95A /* AVFoundationVideoPlayer.h in Headers */,
+				287ADCF21360F10B007FF17E /* ofxiPhoneImage.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1121,7 +1142,7 @@
 			);
 			name = "iPhone+OF Static Library";
 			productName = "Static Library";
-			productReference = BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphonesimulator_Release.a */;
+			productReference = BB24DED610DA7A3F00E9C588 /* libofxiPhone_iphoneos_Debug.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -1220,6 +1241,9 @@
 				E485F78B1360A90000E939D3 /* ofiPhoneVideoPlayer.mm in Sources */,
 				E485F7921360A90000E939D3 /* ofVideoGrabber.cpp in Sources */,
 				E485F7941360A90000E939D3 /* ofVideoPlayer.cpp in Sources */,
+				2887CBDF1360E508000CD95A /* AVFoundationVideoGrabber.mm in Sources */,
+				2887CBE11360E508000CD95A /* AVFoundationVideoPlayer.mm in Sources */,
+				287ADCF11360F10B007FF17E /* ofxiPhoneImage.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
